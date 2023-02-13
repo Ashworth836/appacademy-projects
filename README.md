@@ -113,3 +113,4 @@ Justification: _Every element have to be copied to a new array of length n_
 [reverse]:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
 [spread]:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 # practice-for-week-05-array-practice-main
+# practice-for-week-05-array-practice-main
