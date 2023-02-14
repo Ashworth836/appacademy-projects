@@ -28,3 +28,4 @@ Problems can be found [here][binary logic].
 * Construct a truth table for compound logic expressions
 
 [binary logic]: https://github.com/appacademy/practice-for-week-05-binary-logic-long-practice# practice-for-week-05-binary-logic-long-practice-main
+# practice-for-week-05-binary-logic-long-practice-main
