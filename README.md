@@ -30,3 +30,4 @@ problems where they are an optimal tool to utilize. You will also:
   solve problems.
 - Advanced Phase 3: Hash table optimization problems
   - Explore complex problems where hash tables help with memoization.# practice-for-week-05-hash-tables-long-practice-main
+# practice-for-week-05-hash-tables-long-practice-main
