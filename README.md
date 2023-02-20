@@ -125,4 +125,4 @@ frequencySort(arr3);        // => [5, -1, 4, 4, -6, -6, 1, 1, 1]
 
 
 [starter]: https://github.com/appacademy/practice-for-week-06-custom-sorts-long-practice
-[Array.sort()]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+[Array.sort()]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort# practice-for-week-06-custom-sorts-long-practice
