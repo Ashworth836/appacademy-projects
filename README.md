@@ -102,3 +102,4 @@ with the **CSS Box Model**. This includes setting
 
 [starter]: https://github.com/appacademy/practice-for-week-07-css-box-model
 [MDN docs for width]: https://developer.mozilla.org/en-US/docs/Web/CSS/width# practice-for-week-07-css-box-model
+# practice-for-week-07-css-box-model
