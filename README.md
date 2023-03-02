@@ -90,4 +90,4 @@ with the **CSS: Colors, Borders, and Shadows**. This includes setting
 * `opacity`
 * `box-shadow`
 
-[starter]: https://github.com/appacademy/practice-for-week-07-css-colors-borders-and-shadows
+[starter]: https://github.com/appacademy/practice-for-week-07-css-colors-borders-and-shadows# practice-for-week-07-css-colors-borders-and-shadows
