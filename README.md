@@ -35,4 +35,4 @@ of your page.
 
 a/A logo: https://appacademy.github.io/styleguide/assets/logo/logo-emblem-black-1000.png
 
-[starter]: https://github.com/appacademy/practice-for-week-07-css-basic-styling
+[starter]: https://github.com/appacademy/practice-for-week-07-css-basic-styling# practice-for-week-07-css-basic-styling
