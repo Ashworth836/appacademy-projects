@@ -41,3 +41,4 @@ Congratulations! You have successfully practiced how to link your CSS to your
 HTML files.
 
 [starter]: https://github.com/appacademy/practice-for-week-07-css-linking-imports# practice-for-week-07-css-linking-imports
+# practice-for-week-07-css-linking-imports
