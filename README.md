@@ -70,4 +70,4 @@ with the **CSS Positioning**. This includes setting
 
 [starter]: https://github.com/appacademy/practice-for-week-07-css-positioning
 [MDN docs for positions]: https://developer.mozilla.org/en-US/docs/Web/CSS/position
-[MDN docs for z-index]: https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+[MDN docs for z-index]: https://developer.mozilla.org/en-US/docs/Web/CSS/z-index# practice-for-week-07-css-positioning
