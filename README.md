@@ -107,4 +107,4 @@ Can you make the print out look like this?
      alt="Print Preview"
 />
 
-[starter]: https://github.com/appacademy/practice-for-week-07-css-media-queries
+[starter]: https://github.com/appacademy/practice-for-week-07-css-media-queries# practice-for-week-07-css-media-queries
