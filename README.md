@@ -165,4 +165,4 @@ You practiced multiple ways to adjust HTML elements using CSS selectors
 [preformatted]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre
 [fit-content-doc]: https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content
 [margin-auto-doc]: https://developer.mozilla.org/en-US/docs/Web/CSS/margin#values
-[child combinator selectors]: https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator
+[child combinator selectors]: https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator# practice-for-week-07-css-selectors
