@@ -10,62 +10,62 @@ html, body {
 .element {
     box-sizing: border-box;
     display: inline-block;
-    width: 100px;
+    width: 200px;
     height: 280px;
     font-size: 36px;
 }
 
 #yellow-box {
     background-color: #ffff00;
-    /* Fill these in
-    position: ;
+    /* Fill these in */
+    position: static;
     bottom: 0;
     left: 0;
     right: 0;
     top: 0;
-    z-index: ;
+    z-index: 1;
 }
 
 #pink-box {
     background-color: #ff69b4;
-    /* Fill these in
-    position: ;
+    /* Fill these in */
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    top: 0;
-    z-index: ;
+    top: 60px;
+    z-index: 10px;
 }
 
 #blue-box {
     background-color: #00eeee;
-    /* Fill these in
-    position: ;
+    /* Fill these in */
+    position: relative;
     bottom: 0;
-    left: 0;
+    left: 50px;
     right: 0;
-    top: 0;
-    z-index: ;
+    top: 80px;
+    z-index: 10px;
 }
 
 #red-box {
     background-color: #ff0000;
-    /* Fill these in
-    position: ;
+    /* Fill these in */
+    position: fixed;
     bottom: 0;
-    left: 0;
+    left: 200px;
     right: 0;
-    top: 0;
-    z-index: ;
+    top: 80px;
+    z-index: 1px;
 }
 
 #orange-box {
     background-color: #ffa500;
-    /* Fill these in
-    position: ;
+    /* Fill these in */
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
     top: 0;
-    z-index: ;
+    z-index: 999px;
 }
