@@ -62,4 +62,4 @@ associated with **CSS: Transitions**. This includes setting
 [MDN docs for transform]: https://developer.mozilla.org/en-US/docs/Web/CSS/transform
 [MDN docs for hover]: https://developer.mozilla.org/en-US/docs/Web/CSS/:hover
 [MDN docs for translate]: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate
-[MDN docs for animation]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+[MDN docs for animation]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation# practice-for-week-07-css-transitions
