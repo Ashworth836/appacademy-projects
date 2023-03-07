@@ -470,4 +470,4 @@ to create compelling Web experiences!
 [article]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article
 [footer]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer
 [header]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header
-[nav]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav
+[nav]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav# practice-for-week-07-semantic-html
