@@ -48,3 +48,4 @@ Try to add Media Queries to make your web page responsive.
 [purecss]:https://purecss.io/
 [tailwind]: https://tailwindcss.com/
 [starter]: https://github.com/appacademy/practice-for-week-07-css-framework-long-practice# practice-for-week-07-css-framework-long-practice
+# practice-for-week-07-css-framework-long-practice
