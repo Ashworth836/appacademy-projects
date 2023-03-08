@@ -47,4 +47,4 @@ Try to add Media Queries to make your web page responsive.
 [materialui]:https://material-ui.com/
 [purecss]:https://purecss.io/
 [tailwind]: https://tailwindcss.com/
-[starter]: https://github.com/appacademy/practice-for-week-07-css-framework-long-practice
+[starter]: https://github.com/appacademy/practice-for-week-07-css-framework-long-practice# practice-for-week-07-css-framework-long-practice
