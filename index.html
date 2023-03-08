@@ -2,14 +2,18 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 
 <body>
+  
   <nav class="nav">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
-    <a class="nav-link" href="#">Link</a>
-    <a class="nav-link" href="#">Link</a>
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    <div class="nav-links">
+      <a class="nav-link active" aria-current="page" href="#">Active</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </div>
     <button type="button" class="btn nav-btn">
       Notifications <span class="badge bg-secondary">4</span>
     </button>
@@ -22,59 +26,84 @@
   <h5>h5. Heading</h5>
   <h6>h6. Heading</h6>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-  <button type="button" class="btn btn-primary">Primary</button>
-  <a class="btn btn-link" href="#" role="button">Link</a>
-  <button class="btn btn-primary" type="submit">Button</button>
-  <input class="btn btn-primary" type="button" value="Input">
-  <input class="btn btn-primary" type="submit" value="Submit">
-  <input class="btn btn-primary" type="reset" value="Reset">
+      <button type="button" class="btn btn-primary">Primary</button>
+      <a class="btn btn-link" href="#" role="button">Link</a>
+      <button class="btn btn-primary" type="submit">Button</button>
+      <input class="btn btn-primary" type="button" value="Input">
+      <input class="btn btn-primary" type="submit" value="Submit">
+      <input class="btn btn-primary" type="reset" value="Reset">
 
-  <div class="card" style="width: 18rem;">
-    <img
-      src="https://assets-global.website-files.com/5dcc7f8c449e597ed83356b8/5dcc8a5e5473766654e080bb_5d93d0a059ce656959dab196_logo-full-black-2000-p-500.png"
-      class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.</p>
-      <a href="#" class="btn btn-link">Go somewhere</a>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  
+    <div class="card-wrapper">
+      <div class="card">
+        <img
+          src="https://assets-global.website-files.com/5dcc7f8c449e597ed83356b8/5dcc8a5e5473766654e080bb_5d93d0a059ce656959dab196_logo-full-black-2000-p-500.png"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-link">Go somewhere</a>
+        </div>
+      </div>
     </div>
-  </div>
 
   <div class="alert alert-primary" role="alert">
     A simple primary alert—check it out!
   </div>
 
   <form class="row g-3">
-    <div class="col-md-6">
-      <div class="row">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-        </div>
-      </div>
-      <input type="email" class="form-control" placeholder="Email" id="inputEmail4">
+    
+    <div class="input-container col-md-6">
+      <input type="text" class="form-control" placeholder=" " aria-label="First name">
+      <div class="cut"></div>
+      <label for="firstname" class="placeholder">First Name</label>
     </div>
-    <div class="col-md-6">
-      <input type="password" class="form-control" placeholder="Password" id="inputPassword4">
+
+    <div class="input-container col-md-6">
+      <input type="text" class="form-control" placeholder=" " aria-label="Last name">
+      <div class="cut"></div>
+      <label for="lastname" class="placeholder">Last Name</label>
     </div>
-    <div class="col-12">
-      <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+    
+    <div class="input-container col-md-6">
+      <input type="email" class="form-control" placeholder=" " id="inputEmail4">
+      <div class="cut"></div>
+      <label for="email" class="placeholder">Email</label>
     </div>
-    <div class="col-12">
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+
+    <div class="input-container col-md-6">
+      <input type="password" class="form-control" placeholder=" " id="inputPassword4">
+      <div class="cut"></div>
+      <label for="password" class="placeholder">Password</label>
     </div>
-    <div class="col-md-6">
-      <input type="text" class="form-control" placeholder="City" id="inputCity">
+
+    <div class="input-container col-12">
+      <input type="text" class="form-control" placeholder=" " id="inputAddress" >
+      <div class="cut"></div>
+      <label for="address" class="placeholder">Address</label>
     </div>
-    <div class="col-md-4">
+
+    <div class="input-container col-12">
+      <input type="text" class="form-control" id="inputAddress2" placeholder=" ">
+      <div class="cut cut-longer"></div>
+      <label for="Residence" class="placeholder">Apartment, studio, or floor</label>
+    </div>
+
+    <div class="input-container col-md-6">
+      <input type="text" class="form-control" placeholder=" " id="inputCity">
+      <div class="cut"></div>
+      <label for="place" class="placeholder">City</label>
+    </div>
+
+    <div class="input-container col-md-4">
       <label for="inputState" class="form-label">State</label>
       <select id="inputState" class="form-select">
         <option selected>Choose...</option>
@@ -83,21 +112,29 @@
         <option>NY</option>
       </select>
     </div>
-    <div class="col-md-2">
-      <input type="text" class="form-control" placeholder="Zip" id="inputZip">
+
+    <div class="input-container col-md-2">
+      <input type="text" class="form-control" placeholder=" " id="inputZip">
+      <div class="cut"></div>
+      <label for="zip" class="placeholder">Zip</label>
     </div>
-    <div class="col-12">
+
+    <div class="input-container col-12">
       <div class="form-check">
         <input class="form-check-input" type="checkbox" id="gridCheck">
+        <div class="cut"></div>
         <label class="form-check-label" for="gridCheck">
           Check me out
         </label>
       </div>
     </div>
+
     <div class="col-12">
       <button type="submit" class="btn btn-submit">Submit</button>
     </div>
+
   </form>
+
 </body>
 
 </html>
