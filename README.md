@@ -169,4 +169,4 @@ Good luck! It's time to go to step 1!
 [aa-times-medium]: https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Module-Responsive-Design/response-design-projects/aa-times/assets/1020px-aa-times.png
 [aa-times-large]: https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Module-Responsive-Design/response-design-projects/aa-times/assets/1230px-full-aa-times.png
 [disable cache]: https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Module-Responsive-Design/response-design-projects/aa-times/assets/devtools-enable-cache.png
-[starter]: https://github.com/appacademy/practice-for-week-07-aa-times-long-practice
+[starter]: https://github.com/appacademy/practice-for-week-07-aa-times-long-practice# practice-for-week-07-aa-times-long-practice
