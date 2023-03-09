@@ -24,3 +24,59 @@
 }
 
 /* Your code here */
+@media screen and (max-width: 900px) and (min-width: 601px){
+    .photo-card .content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1;
+    }
+  
+    .photo-card p {
+      padding-left: 10px;
+    }
+  
+    .photo-card h3 {
+      text-align: start;
+    }
+}
+  
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+    .photo-card {
+      display: inline-flex;
+      flex-wrap: wrap;
+      width: 40%;
+    }
+  
+    .photo-card h3 {
+      position: relative;
+      left: 28%;
+    }
+}
+  
+@media screen and (max-width: 1500px) and (min-width: 1201px) {
+    .photo-card .content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1;
+    }
+  
+      .photo-card {
+      display: inline-flex;
+      flex-wrap: wrap;
+      width: 40%;
+    }
+}
+  
+@media print {
+    .photo-card .content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1;
+    }
+  
+    .photo-card {
+      page-break-before: auto; 
+      page-break-after: auto; 
+      page-break-inside: avoid; 
+    }
+}
