@@ -188,4 +188,4 @@ Sometimes, portrait mode is so bad that the rightmost label can get visually
 
 You have completed this project!
 
-[starter]: https://github.com/appacademy/practice-for-week-07-media-queries-long-practice
+[starter]: https://github.com/appacademy/practice-for-week-07-media-queries-long-practice# practice-for-week-07-media-queries-long-practice
