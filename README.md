@@ -202,4 +202,4 @@ Go back through and make additional changes as you see fit -- make it your own! 
 [4]: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
 [5]: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
 [MDN CSS Reference]: https://developer.mozilla.org/en-US/docs/Web/CSS
-[starter]: https://github.com/appacademy/practice-for-week-07-modernize-craigslist-long-practice
+[starter]: https://github.com/appacademy/practice-for-week-07-modernize-craigslist-long-practice# practice-for-week-07-modernize-craigslist-long-practice
