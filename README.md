@@ -57,3 +57,4 @@ For example, to edit a specific post, the API endpoint could be
 - Submit a search on posts => GET/posts/search
 
 [starter]: https://github.com/appacademy/practice-for-week-08-creating-api-docs# practice-for-week-08-creating-api-docs
+# practice-for-week-08-creating-api-docs
