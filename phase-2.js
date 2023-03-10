@@ -1,6 +1,7 @@
 function stretch(timeLeft) {
   // refactor your code from phase 1
   // Your code here
+ 
 }
 
 
