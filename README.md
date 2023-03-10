@@ -99,4 +99,4 @@ workout(1000);
 Comment in each invocation of the workout function listed at the bottom
 and run the file (`node phase-2.js`) to see if you get the expected output.
 
-[starter]: https://github.com/appacademy/practice-for-week-08-create-and-handle-promises
+[starter]: https://github.com/appacademy/practice-for-week-08-create-and-handle-promises# practice-for-week-08-create-and-handle-promises
