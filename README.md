@@ -40,4 +40,4 @@ promise practice in studying for the assessment.**
 Comment in each invocation of the workout function listed at the bottom
 and run the file (`node phase-2.js`) to see if you get the expected output.
 
-[starter]: https://github.com/appacademy/practice-for-week-08-async-await
+[starter]: https://github.com/appacademy/practice-for-week-08-async-await# practice-for-week-08-async-await
