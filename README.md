@@ -294,4 +294,4 @@ you feel like you fully understand why the order and timing happens as it does.
 
 [starter]: https://github.com/appacademy/practice-for-week-08-exploring-promises-long-practice
 [async-await]: https://javascript.info/async-await
-[resolve-reject]: https://javascript.info/promise-api#promise-resolve-reject
+[resolve-reject]: https://javascript.info/promise-api#promise-resolve-reject# practice-for-week-08-exploring-promises-long-practice
