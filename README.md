@@ -318,4 +318,4 @@ particular item. Like a flashlight!
 
 [http://localhost:5000]: http://localhost:5000
 [starter]: https://github.com/appacademy/practice-for-week-08-adventure-game-navigation-long-practice
-[switch]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
+[switch]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch# practice-for-week-08-adventure-game-navigation-long-practice
