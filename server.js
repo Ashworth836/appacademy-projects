@@ -54,6 +54,9 @@ const server = http.createServer((req, res) => {
     // GET /dogs
     if (req.method === 'GET' && req.url === '/dogs') {
       // Your code here
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "application/json");
+      return res.end(JSON.stringify(dogs));
     }
 
     // GET /dogs/:dogId
@@ -62,6 +65,10 @@ const server = http.createServer((req, res) => {
       if (urlParts.length === 3) {
         const dogId = urlParts[2];
         // Your code here
+        const dog =dogs.find((dog) => dog.dogId == dogId);
+        res.statusCode = 200;
+        res.setHeader("Content-Type", "application/json");
+        return res.end(JSON.stringify(dog));
       }
     }
 
@@ -69,6 +76,15 @@ const server = http.createServer((req, res) => {
     if (req.method === 'POST' && req.url === '/dogs') {
       const { name, age } = req.body;
       // Your code here
+      dogs.push({
+        dogId: getNewDogId(),
+        name: name,
+        age: age
+      });
+
+      res.statusCode = 302;
+      res.setHeader("Content-Type", "application/json");
+      return res.end(JSON.stringify(dogs[dogs.length - 1]));
     }
 
     // PUT or PATCH /dogs/:dogId
@@ -77,6 +93,20 @@ const server = http.createServer((req, res) => {
       if (urlParts.length === 3) {
         const dogId = urlParts[2];
         // Your code here
+        const dog = dogs.map((dog) => {
+          if(dog.dogId === dogId){
+            console.log("Original :", dog)
+            dog = Object.assgin(dog, req.Body);
+            console.log("Udated: ", dog);
+            return dog;
+          } else {
+            return `dog with ${dogId} doesn't exist!`;
+          }
+        });
+
+        res.statusCode = 302;
+        res.setHeader("Content-Type", "application/json");
+        return res.end(JSON.stringify(dog));
       }
     }
 
@@ -86,6 +116,16 @@ const server = http.createServer((req, res) => {
       if (urlParts.length === 3) {
         const dogId = urlParts[2];
         // Your code here
+        const delete = dogs.map((dog, index) => {
+          if(dog.dogId === dogId){
+            dogs.splice(index, 1);
+            return "Deleted Successfully";
+          }
+        });
+
+        res.statusCode = 200;
+        res.setHeader("Content-Type", "application/json");
+        return res.end(JSON.stringify(delete));
       }
     }
 
