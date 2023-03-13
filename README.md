@@ -71,4 +71,4 @@ using that index.) Afterwards, return a message in JSON of
 
 Test this endpoint in Postman or by using `fetch` in the browser.
 
-[starter]: https://github.com/appacademy/practice-for-week-08-create-api-endpoints
+[starter]: https://github.com/appacademy/practice-for-week-08-create-api-endpoints# practice-for-week-08-create-api-endpoints
