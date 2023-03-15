@@ -56,3 +56,4 @@ the HTTP Basics project assigned a few days prior.
 [starter]: https://github.com/appacademy/practice-for-week-08-fetch
 [http://localhost:5000]: http://localhost:5000
 [MDN Documentation on the `fetch` Response object]: https://developer.mozilla.org/en-US/docs/Web/API/Response# practice-for-week-08-fetch
+# practice-for-week-08-fetch
