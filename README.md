@@ -107,4 +107,4 @@ the deleted dog.
 
 [starter]: https://github.com/appacademy/practice-for-week-08-fetch-from-server
 [URLSearchParams]: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams
-[fetch]: https://developer.mozilla.org/en-US/docs/Web/API/fetch
+[fetch]: https://developer.mozilla.org/en-US/docs/Web/API/fetch# practice-for-week-08-fetch-from-server
