@@ -206,4 +206,4 @@ and the `message` variable in the template should be replaced with
 Test each of the route handlers by making a request to its route with an invalid
 `dogId` like `2348`.
 
-[starter]: https://github.com/appacademy/practice-for-week-08-html-templating
+[starter]: https://github.com/appacademy/practice-for-week-08-html-templating# practice-for-week-08-html-templating
