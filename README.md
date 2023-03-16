@@ -45,4 +45,4 @@ server is created. It should also redirect the user to the home page.
 If done correctly, you should be redirected when you submit the dog form and
 the newly created dog's information should be logged in the terminal!
 
-[starter]: https://github.com/appacademy/practice-for-week-08-html-form-submission
+[starter]: https://github.com/appacademy/practice-for-week-08-html-form-submission# practice-for-week-08-html-form-submission
