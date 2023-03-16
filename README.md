@@ -54,4 +54,4 @@ const responseBody = `
 ```
 
 [starter]: https://github.com/appacademy/practice-for-week-08-formulate-a-response
-[template literal]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+[template literal]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals# practice-for-week-08-formulate-a-response
