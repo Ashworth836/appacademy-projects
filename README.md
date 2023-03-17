@@ -136,4 +136,4 @@ their values are:
   - url that server wants to redirect the client to
 
 [starter]: https://github.com/appacademy/practice-for-week-08-http-basics-json
-[HTTP Basics practice]: https://github.com/appacademy/practice-for-week-08-http-basics-long-practice
+[HTTP Basics practice]: https://github.com/appacademy/practice-for-week-08-http-basics-long-practice# practice-for-week-08-http-basics-json
