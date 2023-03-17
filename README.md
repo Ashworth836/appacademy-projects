@@ -77,4 +77,4 @@ The request and response components to ask for the home page of the site is
 filled out for you as an example.
 
 [http://localhost:5000]: http://localhost:5000
-[starter]: https://github.com/appacademy/practice-for-week-08-http-basics-long-practice
+[starter]: https://github.com/appacademy/practice-for-week-08-http-basics-long-practice# practice-for-week-08-http-basics-long-practice
