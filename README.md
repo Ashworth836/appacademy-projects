@@ -63,4 +63,4 @@ Remember, HTML web servers should only accept requests with methods of `GET` and
 - Access all the posts of a user
 - Submit a search on posts
 
-[starter]: https://github.com/appacademy/practice-for-week-08-html-web-server-restful-endpoints
+[starter]: https://github.com/appacademy/practice-for-week-08-html-web-server-restful-endpoints# practice-for-week-08-html-web-server-restful-endpoints
