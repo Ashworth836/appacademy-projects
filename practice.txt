@@ -1,0 +1,180 @@
+1. ASK FOR A HOME PAGE THAT DOESN'T EXIST:
+  a. Predicted request components:
+    - Method: GET
+    - URL: /nullpage
+    - Headers: none
+    - Body: none
+  b. Predicted response components:
+    - Status Code: 404
+    - Headers:
+      > Content-Type: text/html
+    - Body: HTML page with the error code and description of the error
+
+
+2. ASK FOR THE PRODUCT LIST PAGE:
+  a. Predicted request components:
+    - Method: GET
+    - URL: /products
+    - Headers: none
+    - Body: none
+  b. Predicted response components:
+    - Status Code: 200
+    - Headers:
+      > Content-Type: text/html 
+    - Body: html page with either ordered or unordered list of available products
+
+
+3. ASK FOR THE PRODUCT DETAIL PAGE:
+  a. Predicted request components:
+    - Method: GET
+    - URL: /products/:productID
+    - Headers: none
+    - Body: productID=[...]&name=[...]&description=[...]&price=[...]
+  b. Predicted response components:
+    - Status Code: 200
+    - Headers:
+      > Content-Type: text/html or json
+    - Body: html page with the requested information
+
+
+4. ASK FOR THE CREATE NEW PRODUCT PAGE:
+  a. Predicted request components:
+    - Method: GET
+    - URL: /products/new
+    - Headers: none
+    - Body: none
+  b. Predicted response components:
+    - Status Code: 200
+    - Headers:
+      > Content-Type: html form
+    - Body: html page containing a user-friendly form
+
+
+5. SUBMIT A NEW PRODUCT:
+  a. Predicted request components:
+    - Method: POST
+    - URL: /products
+    - Headers: none
+    - Body: a html or json form with the new product's attributes provided
+  b. Predicted response components:
+    - Status Code: 200
+    - Headers:
+      > Content-Type: text/html
+    - Body: the parent /products page updated to include the new product
+
+
+6. ASK FOR THE EDIT PRODUCT PAGE:
+  a. Predicted request components:
+    - Method: GET
+    - URL: /products/:productID/edit
+    - Headers: none
+    - Body: none
+  b. Predicted response components:
+    - Status Code: 200
+    - Headers:
+      > Content-Type: text/html
+    - Body: a html page of the product with it's original attributes mutable.
+
+
+7. SUBMIT AN EDIT FOR AN EXISTING PRODUCT:
+  a. Predicted request components:
+    - Method: POST
+    - URL: /products/:productID
+    - Headers: none
+    - Body: none
+  b. Predicted response components:
+    - Status Code: 200
+    - Headers:
+      > Content-Type: text/html
+    - Body: text/html page of the specific product with the updated details
+
+
+8. SUBMIT A DELETE FOR AN EXISTING PRODUCT:
+  a. Predicted request components:
+    - Method: POST
+    - URL: /products/:productID/delete
+    - Headers: none
+    - Body: null
+  b. Predicted response components:
+    - Status Code: 200
+    - Headers:
+      > Content-Type: 
+    - Body: a new page with confirmation of product deletion
+
+
+9. SUBMIT A NEW REVIEW FOR A PRODUCT:
+  a. Predicted request components:
+    - Method: GET
+    - URL: /products/:productID/reviews/new
+    - Headers:
+    - Body:
+  b. Predicted response components:
+    - Status Code: 200
+    - Headers:
+      > Content-Type: text/html
+    - Body: list of reviews 
+
+
+10. ASK FOR THE EDIT REVIEW PAGE FOR A PRODUCT:
+  a. Predicted request components:
+    - Method: GET
+    - URL: reviews/:reviewID/edit
+    - Headers:
+    - Body:
+  b. Predicted response components:
+    - Status Code: 200
+    - Headers:
+      > Content-Type: form
+    - Body: the review page of a product
+
+
+11. SUBMIT AN EDIT FOR AN EXISTING REVIEW:
+  a. Predicted request components:
+    - Method: POST
+    - URL: products/:productID/reviews
+    - Headers:
+    - Body:
+  b. Predicted response components:
+    - Status Code: 200
+    - Headers:
+      > Content-Type:
+    - Body: 
+
+
+12. SUBMIT A DELETE FOR AN EXISTING REVIEW:
+  a. Predicted request components:
+    - Method: POST
+    - URL: /reviews/2/delete
+    - Headers:
+    - Body:
+  b. Predicted response components:
+    - Status Code: 200
+    - Headers:
+      > Location: /products/1
+    - Body: 
+
+
+13. ASK FOR ALL THE PRODUCTS IN A PARTICULAR CATEGORY BY TAG OF THE CATEGORY
+  a. Predicted request components:
+    - Method: GET
+    - URL: /categories/beauty/products
+    - Headers:
+    - Body:
+  b. Predicted response components:
+    - Status Code: 200
+    - Headers:
+      > Content-Type:
+    - Body: 
+
+
+14. ASK FOR THE BEST-SELLING PRODUCT:
+  a. Predicted request components:
+    - Method: GET
+    - URL:  /products/best-selling
+    - Headers:
+    - Body:
+  b. Predicted response components:
+    - Status Code: 200
+    - Headers:
+      > Content-Type:
+    - Body: 
