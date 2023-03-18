@@ -349,4 +349,4 @@ Response components:
 - Body:
 
 [http://localhost:5000]: http://localhost:5000
-[starter]: https://github.com/appacademy/practice-for-week-08-music-archive-docs-long-practice
+[starter]: https://github.com/appacademy/practice-for-week-08-music-archive-docs-long-practice# practice-for-week-08-music-archive-docs-long-practice
