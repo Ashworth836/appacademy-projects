@@ -78,4 +78,4 @@ are:
   - "application/json"
 
 [starter]: https://github.com/appacademy/practice-for-week-08-music-archive-docs-json
-[Music Archive Docs practice]: https://github.com/appacademy/practice-for-week-08-music-archive-docs-long-practice
+[Music Archive Docs practice]: https://github.com/appacademy/practice-for-week-08-music-archive-docs-long-practice# practice-for-week-08-music-archive-docs-json
