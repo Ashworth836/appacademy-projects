@@ -19,4 +19,4 @@ phases.
 3. Parse the body of the request - convert a percent-encoded request body into a
    JavaScript object
 
-[starter]: https://github.com/appacademy/practice-for-week-08-parse-request-body
+[starter]: https://github.com/appacademy/practice-for-week-08-parse-request-body# practice-for-week-08-parse-request-body
