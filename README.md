@@ -30,4 +30,4 @@ done lifting weights
 done working out
 ```
 
-[starter]: https://github.com/appacademy/practice-for-week-08-promise-all
+[starter]: https://github.com/appacademy/practice-for-week-08-promise-all# practice-for-week-08-promise-all
