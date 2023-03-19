@@ -79,4 +79,4 @@ more `GET` endpoints.
 [repo]: https://github.com/appacademy/practice-for-week-08-postman
 [http://localhost:5000]: http://localhost:5000
 [http://localhost:5000/posts]: http://localhost:5000/posts
-[Postman breakdown]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-08/assets/postman_visual_Basic_HTTP.png
+[Postman breakdown]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-08/assets/postman_visual_Basic_HTTP.png# practice-for-week-08-postman
