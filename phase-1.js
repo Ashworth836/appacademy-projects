@@ -32,8 +32,20 @@ function workout() {
     .then(liftWeights)
     .then(() => console.log("done working out"))
     .catch((err) => console.log(err));
+
 }
 
+let values = [
+  stretch(),
+  runOnTreadmill(),
+  liftWeights
+]
+
+function intensiveWorkOut(){
+  Promise.all(values)
+  .then(() => console.log("done working out"))
+  .catch((err) => console.log(err));
+}
 
 /* ============================ TEST YOUR CODE ============================
 
