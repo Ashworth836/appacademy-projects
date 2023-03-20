@@ -10,8 +10,24 @@ Paste your code for fetch requests here once you finish each task.
 */
 
 // Your code here
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
 
+var raw = JSON.stringify({
+  "message": "BYE SAM!"
+});
 
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'manual'
+};
+
+fetch("/posts", requestOptions)
+  .then(response => response.json())
+  .then(resBody => console.log(resBody))
+  .catch(error => console.log('error', error));
 
 /* =============================== Phase 2 ================================ */
 /*
@@ -20,3 +36,15 @@ Paste your code for fetch requests here once you finish each task.
 */
 
 // Your code here
+fetch('/post', {
+  method: 'POST',
+  headers: {
+    'Content-Type' : 'application/json'
+  },
+  body: JSON.stringify({
+    message: 'New Post!'
+  })
+})
+.then(res => res.json())
+.then(resBody => console.log(resBody))
+.catch(error => console.log('error', error))
