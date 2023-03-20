@@ -104,4 +104,4 @@ Tip: You can use the following functions to aid you:
 
 [`String.split`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
 [`String.startsWith`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith
-[starter]: https://github.com/appacademy/practice-for-week-08-route-handlers
+[starter]: https://github.com/appacademy/practice-for-week-08-route-handlers# practice-for-week-08-route-handlers
