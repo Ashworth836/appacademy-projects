@@ -64,4 +64,4 @@ Tip: Use the following functions to aid you:
 
 [`String.split`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
 [`String.startsWith`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith
-[starter]: https://github.com/appacademy/practice-for-week-08-serve-static-assets
+[starter]: https://github.com/appacademy/practice-for-week-08-serve-static-assets# practice-for-week-08-serve-static-assets
