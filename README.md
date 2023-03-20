@@ -96,4 +96,4 @@ Next, parse and print the response body just like how you did with the previous
 Make sure you see the response body logged to the "Console" tab of the browser.
 
 [postman-json-request-body]: https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Modular-Curriculum/content/week-08/assets/postman-json-request-body.PNG
-[starter]: https://github.com/appacademy/practice-for-week-08-testing-api-endpoints
+[starter]: https://github.com/appacademy/practice-for-week-08-testing-api-endpoints# practice-for-week-08-testing-api-endpoints
