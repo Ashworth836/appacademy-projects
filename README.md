@@ -26,4 +26,4 @@ request.
 Serialize the `resBody` object into JSON and write that to the body of the
 response. Make sure to set the necessary response components!
 
-[starter]: https://github.com/appacademy/practice-for-week-08-serialize-deserialize-json
+[starter]: https://github.com/appacademy/practice-for-week-08-serialize-deserialize-json# practice-for-week-08-serialize-deserialize-json
