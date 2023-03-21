@@ -25,4 +25,4 @@ This project will be a 3 day project.
 
 1. Fetch a new cat image on page load and display it
 2. Add interactivity to the page with buttons and forms
-3. Store the application state on the client
+3. Store the application state on the client# practice-for-week-09-catsagram-long-practice-day-1
