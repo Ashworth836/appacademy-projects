@@ -163,4 +163,4 @@ you want to add!
 [after-reset-example]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-09/practice-battleship-dom/battleship-after-reset.png
 [http://localhost:5000]: http://localhost:5000
 [draggable]: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/draggable
-[drag and drop API]: https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API
+[drag and drop API]: https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API# practice-for-week-09-battleship-dom
