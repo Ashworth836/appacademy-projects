@@ -33,4 +33,4 @@ __index.js__. Try DRYing up your code and keep in mind the Single Responsibility
 Principle.
 
 [starter]: https://github.com/appacademy/practice-for-week-09-catsagram-long-practice-day-2
-[http://localhost:5000]: http://localhost:5000
+[http://localhost:5000]: http://localhost:5000# practice-for-week-09-catsagram-long-practice-day-2
