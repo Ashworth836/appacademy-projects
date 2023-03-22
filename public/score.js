@@ -68,6 +68,7 @@ const vote = e => {
     
     // update score
     updateScore(newScore);
+    localStorage.setItem('score', newScore);
 };
 
 export const resetScore = () => {
