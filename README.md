@@ -279,4 +279,4 @@ You put into practice the following features:
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
 [starter]: https://github.com/appacademy/practice-for-week-09-cookies
-[http://localhost:5000]: http://localhost:5000
+[http://localhost:5000]: http://localhost:5000# practice-for-week-09-cookies
