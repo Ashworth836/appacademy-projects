@@ -3,16 +3,32 @@
 // For storing user's theme selection in cookies
 function storeTheme(themeName) {
     // Your code here
+    const theme = `themeName=${themeName}`;
+    document.cookie = theme;
+}
+
+function parseCookie() {
+    return document.cookie  
+        .split(";")
+        .map(keyValue => keyValue.split("="))
+        .map(([key, value]) => ([key, value]))
+        .reduce((acc, [key, value]) => {
+            acc[key] = value;
+            return acc;
+        }, {});
 }
 
 // For restoring theme from cookies, if selected by the user in the past
 function restoreTheme() {
     // Your code here
+    const cookieObj = parseCookie();
+    if(cookieObj.themeName) setTheme(cookieObj.themeName);
 }
 
 // For clearing theme selection from cookies (reset to default)
 function clearTheme() {
     // Your code here
+    document.cookie = "themeName=; expire=00:00:00"
 }
 
 /* ================================ PHASE 3 ================================ */
@@ -20,16 +36,21 @@ function clearTheme() {
 // For storing user's display name in cookies
 function storeName(displayName) {
     // Your code here
+    const displayCookie =  `displayName=${displayName}`;
+    document.cookie = displayCookie;
 }
 
 // For restoring user's display name from cookies, if set in the past
 function restoreName() {
     // Your code here
+    const cookieObj = parseCookie();
+    if(cookieObj.displayName) setInputValue("display-name", cookieObj.displayName);
 }
 
 // For clearing user's display name from cookies
 function clearName() {
     // Your code here
+    document.cookie = "displayCookie=; expire=00:00:00";
 }
 
 /* ========================================================================= */
