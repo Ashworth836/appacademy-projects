@@ -22,4 +22,4 @@ Some code will be written for you, so all you'll need to do is fill in code
 where indicated. An example image element along with CSS styles is provided to
 serve as a guide for you.
 
-[starter]: https://github.com/appacademy/practice-for-week-09-create-remove-elements
+[starter]: https://github.com/appacademy/practice-for-week-09-create-remove-elements# practice-for-week-09-create-remove-elements
