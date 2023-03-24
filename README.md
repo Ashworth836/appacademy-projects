@@ -40,4 +40,4 @@ require you to do further research into different event types.
 - Create a global event listener that alerts the user whenever the space bar is
   pressed.
 
-[starter]: https://github.com/appacademy/practice-for-week-09-event-listeners
+[starter]: https://github.com/appacademy/practice-for-week-09-event-listeners# practice-for-week-09-event-listeners
