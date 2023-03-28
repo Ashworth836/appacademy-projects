@@ -153,4 +153,4 @@ If the computer is Player O, then it will play after you play your first "X".
 [starter]: https://github.com/appacademy/practice-for-week-09-tic-tac-toe-dom-long-practice
 [sketch]: https://assets.aaonline.io/Module-DOM-API/formative-project-tic-tac-toe/ui-design.svg
 [X]: https://assets.aaonline.io/Module-DOM-API/formative-project-tic-tac-toe/player-x.svg
-[O]: https://assets.aaonline.io/Module-DOM-API/formative-project-tic-tac-toe/player-o.svg
+[O]: https://assets.aaonline.io/Module-DOM-API/formative-project-tic-tac-toe/player-o.svg# practice-for-week-09-tic-tac-toe-dom-long-practice
