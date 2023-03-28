@@ -207,4 +207,4 @@ You put into practice the following features:
   **Developer Tools**
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
-[http://localhost:5000]: http://localhost:5000
+[http://localhost:5000]: http://localhost:5000# practice-for-week-09-web-storage
