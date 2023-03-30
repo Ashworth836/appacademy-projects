@@ -32,4 +32,4 @@ At the bottom, set the port and listen for incoming requests.
 
 Implement a route handler for a GET request to the path `/users/:userId`. Send a
 plain-text response with the message `"User details for userId: <userId>"`,
-where `<userId>` is replaced with the value of the path parameter `:userId`.
+where `<userId>` is replaced with the value of the path parameter `:userId`.# practice-for-week-10-http-server-to-express-server
