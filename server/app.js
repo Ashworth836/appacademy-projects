@@ -11,6 +11,9 @@ app.use(express.json());
  *     Response: 1.0.0
  */
 // Your code here
+app.get('/version', (req, res) => {
+    res.send('1.0.0');
+});
 
 /**
  *  Basic Phase 2 - Route param and JSON response
@@ -24,6 +27,15 @@ app.use(express.json());
  *  combined with the id sent as a route parameter in the url
  */
 // Your code here
+app.get('/viewers/:id', (req, res) => {
+    res.json({
+        id: req.params.id,
+        firstName: 'John',
+        lastName: "Doe",
+        birthdate: '01-01-2001',
+        favoriteMovie: ['Movie 1', 'Movie 2', 'Movie 3']
+    });
+});
 
 /** Basic Phase 3 - Query params in URL
  *      Method: GET
@@ -43,6 +55,14 @@ app.use(express.json());
  *          message required
  */
 // Your code here
+app.get('/info', (req, res) => {
+    const msg = req.query.message;
+    if(msg){
+        res.send(msg);
+    }else{
+        res.send('message required')
+    }
+});
 
 /**
  *  IMPORTANT: Scroll to the top for basic phases.
@@ -77,7 +97,19 @@ app.use(express.json());
  *          {"id":98765432,"name":"Honey Sweet","year":1967,"isFavorite":false}
  */
 // Your code here
-
+app.post("/movies", (req, res) => {
+    const id = Math.floor(Math.random() * 100000000);
+    const { name, year, favorite } = req.body;
+    const isFavorite = favorite === "on" ? true : false;
+    const response = {
+      id,
+      name,
+      year: parseInt(year),
+      isFavorite
+    };
+    res.json(response);
+});
+  
 /**
  *  Advanced Bonus Phase B - Research how to return static
  *                           files in a public folder
@@ -94,6 +126,7 @@ app.use(express.json());
  *      Test route: /logo.png
  */
 // Your code here
+app.use(express.static("public"));
 
 // DO NOT EDIT - Set port and listener
 const port = 5000;
