@@ -58,4 +58,4 @@ You should **NOT** see the following assets at the respective URL paths:
 [http://localhost:5000/css/application.css]: http://localhost:5000/css/application.css
 [http://localhost:5000/scripts/hello-world.js]: http://localhost:5000/scripts/hello-world.js
 [http://localhost:5000/images/hello.png]: http://localhost:5000/images/hello.png
-[http://localhost:5000/stylesheets/application.css]: http://localhost:5000/stylesheets/application.css
+[http://localhost:5000/stylesheets/application.css]: http://localhost:5000/stylesheets/application.css# practice-for-week-10-express-static-files
