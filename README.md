@@ -131,4 +131,4 @@ in your Express application and sends a customized response for the error.
 You can use these middleware or customize them further in your future Express
 applications.
 
-[http://localhost:5000/some-unknown-resource]: http://localhost:5000/some-unknown-resource
+[http://localhost:5000/some-unknown-resource]: http://localhost:5000/some-unknown-resource# practice-for-week-10-express-error-handling-404
