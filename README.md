@@ -63,4 +63,4 @@ You should see this response:
 [localhost]: http://localhost:5000/
 [all-colors]: http://localhost:5000/colors
 [one-color]: http://localhost:5000/colors/1
-[insert-color]: http://localhost:5000/colors/add/Purple
+[insert-color]: http://localhost:5000/colors/add/Purple# practice-for-week-10-combining-express-sql-short-practice
