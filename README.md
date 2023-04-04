@@ -139,4 +139,4 @@ You now have the skills to run SQL commands stored in files!
 
 You will use this process of writing and running SQL files extensively in future
 practices since it means you can save your work, and even commit it to GitHub
-for use in the future!
+for use in the future!# practice-for-week-10-sql-practice-running-files
