@@ -106,4 +106,4 @@ Use `Ctrl+d` to exit the cli.
 Now your prompt should return to normal, which probably means it ends with "$"
 or "%".
 
-Congratulations! You have successfully used the SQLite3 CLI.
+Congratulations! You have successfully used the SQLite3 CLI.# practice-for-week-10-sql-practice-sqlite3-cli
