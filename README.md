@@ -64,4 +64,4 @@ without error, and see "Jenny Who" in the query results when you run the
 
 ## Congratulations!
 
-You are now able to insert data into a database.
+You are now able to insert data into a database.# practice-for-week-10-sql-practice-insert-data
