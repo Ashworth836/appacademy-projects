@@ -59,4 +59,4 @@ You are now able to create and recreate database tables. Remember to be very
 careful dropping tables as all the data will be lost in the process!
 
 
-[drop-table]: https://www.sqlite.org/lang_droptable.html
+[drop-table]: https://www.sqlite.org/lang_droptable.html# practice-for-week-10-sql-practice-create-drop-tables
