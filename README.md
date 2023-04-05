@@ -59,4 +59,4 @@ WHERE first_name = 'Tyler'
 
 ## Congratulations!
 
-You are now able to update data in a database using the SQL `UPDATE` statement.
+You are now able to update data in a database using the SQL `UPDATE` statement.# practice-for-week-10-sql-practice-update-data
