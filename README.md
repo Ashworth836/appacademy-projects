@@ -74,4 +74,4 @@ Run the SQL command to query for all large puppies with a microchip.
 ## Congratulations!
 
 You are now able to query data in a database using the SQL `SELECT` statement 
-with and without a `WHERE` clause.
+with and without a `WHERE` clause.# practice-for-week-10-sql-practice-select-data
