@@ -1,0 +1,28 @@
+SQLite version 3.31.1 2020-01-27 19:55:54
+Enter ".help" for usage hints.
+sqlite> .read seed-data.sql
+1|Ryan|Pond
+2|Sky|Tyler
+3|Morgan|Jones
+4|Shannon|Noble
+5|River|Song
+sqlite> UPDATE friends
+   ...> SET last_name = 'Blue'
+   ...> WHERE id = 1;
+sqlite> SELECT * FROM friends;
+1|Ryan|Blue
+2|Sky|Tyler
+3|Morgan|Jones
+4|Shannon|Noble
+5|River|Song
+sqlite> UPDATE friends
+   ...> SET last_name = 'Smith'
+   ...> WHERE first_name = 'Tyler'
+   ...> AND last_name = 'Rose';
+sqlite> SELECT * FROM friends;
+1|Ryan|Blue
+2|Sky|Tyler
+3|Morgan|Jones
+4|Shannon|Noble
+5|River|Song
+sqlite>
