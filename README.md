@@ -66,4 +66,4 @@ run `SELECT * FROM puppies;`.
 ## Congratulations!
 
 You are now able to create delete one or more rows from a database table using 
-SQL `DELETE` command!
+SQL `DELETE` command!# practice-for-week-10-sql-practice-delete-data
