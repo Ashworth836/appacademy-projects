@@ -59,4 +59,4 @@ or `4`.
 
 ## Congratulations!
 
-You are now able to perform more advanced querying with `SELECT` clauses!
+You are now able to perform more advanced querying with `SELECT` clauses!# practice-for-week-10-sql-practice-intermediate-querying
