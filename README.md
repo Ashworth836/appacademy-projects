@@ -15,4 +15,4 @@ Run `npm install` to install the dependencies.
 * Basic Phase 3: Insert, Select, Update, and Delete
   * data manipulation
 * Intermediate Phase 4: More practice
-  * more practice creating databases, tables, and manipulating data
+  * more practice creating databases, tables, and manipulating data# practice-for-week-10-sql-1-long-practice
