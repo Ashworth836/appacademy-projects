@@ -65,4 +65,4 @@ these during assessment prep.
 
 [select quiz1]: https://sqlzoo.net/wiki/SELECT_Quiz
 [select quiz2]: https://sqlzoo.net/wiki/BBC_QUIZ
-[select quiz3]: https://sqlzoo.net/wiki/Nobel_Quiz
+[select quiz3]: https://sqlzoo.net/wiki/Nobel_Quiz# practice-for-week-10-sql-zoo-basic-long-practice
