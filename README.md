@@ -97,4 +97,4 @@ relationship!
 
 
 [musicians-instruments-db-schema]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-10/musicians-instruments-db-schema.png
-[musicians-instruments-db-diagram-info]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-10/musicians-instruments-db-diagram-info.txt
+[musicians-instruments-db-diagram-info]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-10/musicians-instruments-db-diagram-info.txt# practice-for-week-10-sql-practice-join-many-to-many
