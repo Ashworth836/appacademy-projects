@@ -89,4 +89,4 @@ You are now able to cascade deletion of related data using `ON DELETE CASCADE`!
 
 
 [bands-musicians-db-schema]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-10/bands-musicians-db-schema.png
-[bands-musicians-db-diagram-info]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-10/bands-musicians-db-diagram-info.txt
+[bands-musicians-db-diagram-info]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-10/bands-musicians-db-diagram-info.txt# practice-for-week-10-sql-practice-delete-cascade
