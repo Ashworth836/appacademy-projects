@@ -33,4 +33,4 @@ necessary attributes and `FOREIGN KEY`s to make this relationship work.
 
 ## Congratulations!
 
-You are now able to create one-to-many and many-to-many relationships in SQL!
+You are now able to create one-to-many and many-to-many relationships in SQL!# practice-for-week-10-sql-practice-create-related-tables
