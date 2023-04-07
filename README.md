@@ -74,4 +74,4 @@ relationship!
 
 
 [bands-albums-db-schema]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-10/bands-albums-db-schema.png
-[bands-albums-db-diagram-info]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-10/bands-albums-db-diagram-info.txt
+[bands-albums-db-diagram-info]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-10/bands-albums-db-diagram-info.txt# practice-for-week-10-sql-practice-join-one-to-many
