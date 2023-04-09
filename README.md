@@ -44,3 +44,4 @@ getting back home safely!
 
 [external resource]: https://sql-island.informatik.uni-kl.de/
 [language-change]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/module-04/week-10/practices/sql-island-language-menu.png# practice-for-week-10-sql-island-long-practice
+# practice-for-week-10-sql-island-long-practice
