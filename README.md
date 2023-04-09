@@ -34,4 +34,4 @@ these during assessment prep.
 [join tutorial2]: https://sqlzoo.net/wiki/More_JOIN_operations
 
 [join quiz1]: https://sqlzoo.net/wiki/JOIN_Quiz
-[join quiz2]: https://sqlzoo.net/wiki/JOIN_Quiz_2
+[join quiz2]: https://sqlzoo.net/wiki/JOIN_Quiz_2# practice-for-week-10-sql-zoo-intermediate-long-practice
