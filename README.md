@@ -43,4 +43,4 @@ Use your SQL knowledge, learn about the residents of the island, and good luck
 getting back home safely!
 
 [external resource]: https://sql-island.informatik.uni-kl.de/
-[language-change]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/module-04/week-10/practices/sql-island-language-menu.png
+[language-change]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/module-04/week-10/practices/sql-island-language-menu.png# practice-for-week-10-sql-island-long-practice
