@@ -41,4 +41,4 @@ Use your SQL knowledge and logic to learn about the events and people involved,
 and help find justice in SQL City!
 
 [external resource]: https://mystery.knightlab.com/
-[walkthrough]: https://mystery.knightlab.com/walkthrough.html
+[walkthrough]: https://mystery.knightlab.com/walkthrough.html# practice-for-week-10-sql-murder-mystery-long-practice
