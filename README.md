@@ -79,4 +79,4 @@ You can put multiple <code>.read</code> commands in the same shell command for f
 
 
 [cats-toys-db-schema]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-10/cats-toys-db-schema.png
-[cats-toys-db-diagram-info]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-10/cats-toys-db-diagram-info.txt
+[cats-toys-db-diagram-info]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-10/cats-toys-db-diagram-info.txt# practice-for-week-10-sql-subqueries
