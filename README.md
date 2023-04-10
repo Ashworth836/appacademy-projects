@@ -66,4 +66,4 @@ a minute or two. Writing a query may help.)
 
 
 [cats-toys-db-schema]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-10/cats-toys-db-schema.png
-[cats-toys-db-diagram-info]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-10/cats-toys-db-diagram-info.txt
+[cats-toys-db-diagram-info]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-10/cats-toys-db-diagram-info.txt# practice-for-week-10-sql-aggregates
