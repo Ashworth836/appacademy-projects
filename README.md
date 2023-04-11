@@ -107,4 +107,4 @@ When you are finished with this phase, you can move on to the **Bonus** phase.
 
 
 [flow-chart-original]: https://app.diagrams.net/#G1yKkkv5O3AAFxioOJHTsxaNBrSo-5oW-H 
-[benchmark-sql-flow-chart]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-11/readings/benchmark-sql-queries.png
+[benchmark-sql-flow-chart]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-11/readings/benchmark-sql-queries.png# practice-for-week-11-improve-sql-queries-short-practice
