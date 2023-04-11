@@ -39,4 +39,4 @@ Complete the following practice as well.
 [subquery reference3]: https://sqlzoo.net/wiki/Using_nested_SELECT
 
 [subquery tutorial1]: https://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial
-[subquery quiz1]: https://sqlzoo.net/wiki/Nested_SELECT_Quiz
+[subquery quiz1]: https://sqlzoo.net/wiki/Nested_SELECT_Quiz# practice-for-week-10-sql-zoo-advanced-long-practice
