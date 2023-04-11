@@ -46,4 +46,4 @@ aren't able to figure it out at this time. This will only save you 2-5 minutes
 for this practice (more later, if you continue to use **SQLite**).
 
 
-[cat-owners-schema]: https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Modular-Curriculum/content/module-04/week-10/practices/sql-2-long-practice/cat-owners-schema.PNG
+[cat-owners-schema]: https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Modular-Curriculum/content/module-04/week-10/practices/sql-2-long-practice/cat-owners-schema.PNG# practice-for-week-10-sql-3-long-practice
