@@ -106,4 +106,4 @@ tables.
 
 
 [queryInterface]: https://sequelize.org/master/class/src/dialects/abstract/query-interface.js~QueryInterface.html
-[migration-skeleton]: https://sequelize.org/master/manual/migrations.html#migration-skeleton
+[migration-skeleton]: https://sequelize.org/master/manual/migrations.html#migration-skeleton# practice-for-week-11-sequelize-modify-table-migrations-short-practice
