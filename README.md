@@ -155,4 +155,4 @@ You are now able to generate **Sequelize** models and migrations, as well as
 implement database constraints and model-level validations.
 
 
-[validate-docs]: https://sequelize.org/master/manual/validations-and-constraints.html#validators
+[validate-docs]: https://sequelize.org/master/manual/validations-and-constraints.html#validators# practice-for-week-11-sequelize-validations-and-constraints-short-practice
