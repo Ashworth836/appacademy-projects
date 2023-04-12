@@ -99,4 +99,4 @@ Check that the database now only contains the data from the first seeder.
 
 ## Congratulations!
 
-You are now able to generate, run, and undo seeder files with **Sequelize**.
+You are now able to generate, run, and undo seeder files with **Sequelize**.# practice-for-week-11-sequelize-seeders-short-practice
