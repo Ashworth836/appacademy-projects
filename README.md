@@ -168,4 +168,4 @@ have been accurately customized.
 ## Congratulations!
 
 You are now able to add Sequelize to an Express application and successfully
-communicate with a SQLite database.
+communicate with a SQLite database.# practice-for-week-11-combining-express-sequelize-short-practice
