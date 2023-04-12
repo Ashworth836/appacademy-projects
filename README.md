@@ -83,4 +83,4 @@ database.
 
 ## Congratulations!
 
-You are now able to undo and redo migrations with **Sequelize**.
+You are now able to undo and redo migrations with **Sequelize**.# practice-for-week-11-sequelize-undo-migrations-short-practice
