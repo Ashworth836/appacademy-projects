@@ -46,4 +46,4 @@ in completing this practice.
 
 [localhost]: http://localhost:5000/
 [docs]: https://sequelize.org/master/manual/getting-started.html#new-databases-versus-existing-databases
-[cli-docs]: https://github.com/sequelize/cli/blob/main/README.md
+[cli-docs]: https://github.com/sequelize/cli/blob/main/README.md# practice-for-week-11-combining-express-sequelize-long-practice-1
