@@ -95,4 +95,4 @@ CREATE TABLE `Colors` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` VARCHAR(25
 ## Congratulations!
 
 You are now able to create and run migrations in **Sequelize** that `CREATE` 
-tables.
+tables.# practice-for-week-11-sequelize-create-migration-short-practice
