@@ -130,3 +130,4 @@ model-level validations.
 
 You are now able to generate **Sequelize** models and migrations, as well as 
 implement basic database-level constraints and model-level validations.# practice-for-week-11-sequelize-models-short-practice
+# practice-for-week-11-sequelize-models-short-practice
