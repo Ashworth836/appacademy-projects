@@ -22,6 +22,11 @@ app.get('/puppies', async (req, res, next) => {
     let allPuppies;
 
     // Your code here
+    Puppy.findAll({
+        order:[
+            ['name', 'ASC']
+        ]
+    });
 
     res.json(allPuppies);
 });
@@ -34,6 +39,16 @@ app.get('/puppies/chipped', async (req, res, next) => {
     let chippedPuppies;
 
     // Your code here
+    Puppy.findAll({
+        where: {
+            microchipped: true
+        },
+        order: [
+            ['age_yrs', 'DESC'],
+            ['name', 'ASC']
+
+        ]
+    });
 
     res.json(chippedPuppies);
 });
@@ -46,6 +61,11 @@ app.get('/puppies/name/:name', async (req, res, next) => {
     let puppyByName;
     
     // Your code here
+    Puppy.findOne({
+        where: {
+            name: req.params.name
+        }
+    })
 
     res.json(puppyByName);
 })
@@ -58,6 +78,13 @@ app.get('/puppies/shepherds', async (req, res, next) => {
     let shepherds;
     
     // Your code here
+    Puppy.findAll({
+        where: {
+            breed: {
+                [Op.endsWith]: 'Shepherd'
+            }
+        }
+    })
 
     res.json(shepherds);
 })
@@ -70,6 +97,20 @@ app.get('/puppies/tinybabies', async (req, res, next) => {
     let tinyBabyPuppies;
     
     // Your code here
+    Puppy.findAll({
+        where: {
+            age_yrs: {
+                [Op.lt]: 1
+            },
+            weight_lbs: {
+                [Op.lt]: 20
+            }   
+        },
+        order: [
+            ['age_yrs', 'ASC'],
+            ['weight_lbs', 'ASC']
+        ]
+    })
 
     res.json(tinyBabyPuppies);
 })
@@ -82,6 +123,7 @@ app.get('/puppies/:id', async (req, res, next) => {
     let puppyById;
     
     // Your code here
+    Puppy.findByPk(req.params.id)
     
     res.json(puppyById);
 });
