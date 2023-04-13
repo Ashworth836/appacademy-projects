@@ -121,4 +121,4 @@ navigating to this route in your browser, or checking `sqlite3` directly.
 
 ## Congratulations!
 
-You are now able to use **Sequelize** models to insert data into a database.
+You are now able to use **Sequelize** models to insert data into a database.# practice-for-week-11-sequelize-insert-short-practice
