@@ -136,4 +136,4 @@ You are now able to use **Sequelize** models to query for data.
 
 [sequelize-querying]: https://sequelize.org/master/manual/model-querying-basics.html
 [sequelize-order]: https://sequelize.org/master/manual/model-querying-basics.html#ordering-and-grouping
-[sequelize-operators]: https://sequelize.org/master/manual/model-querying-basics.html#operators
+[sequelize-operators]: https://sequelize.org/master/manual/model-querying-basics.html#operators# practice-for-week-11-sequelize-select-queries-short-practice
