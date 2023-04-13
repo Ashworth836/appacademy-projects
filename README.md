@@ -164,4 +164,4 @@ through your index route of `/puppies` or through `sqlite3` directly.
 ## Congratulations!
 
 You are now able to use **Sequelize** models to update and delete data from a 
-database.
+database.# practice-for-week-11-sequelize-update-delete-singular-short-practice
