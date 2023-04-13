@@ -22,10 +22,31 @@ const { Op } = require("sequelize");
 router.get('/trees-insects', async (req, res, next) => {
     let trees = [];
 
-    trees = await Tree.findAll({
+    const trees = await Tree.findAll({
+        include: [
+            {
+                model: Insect,
+                as: 'insects',
+                attributes: ['id', 'name'],
+                through: {attributes: []}
+            }
+        ],
         attributes: ['id', 'tree', 'location', 'heightFt'],
+        order: [ ['heightFt', 'DESC'] ],
     });
-
+    for (let i = 0; i < trees.length; i++) {
+        const tree = trees[i];
+        let insects = tree.insects;
+        insects.sort((a, b) => a.name > b.name ? 1 : -1);
+        payload.push({
+            id: tree.id,
+            tree: tree.tree,
+            location: tree.location,
+            heightFt: tree.heightFt,
+            insects: insects.map((insect) => ({id: insect.id, name: insect.name})),
+        });
+    }
+    
     res.json(trees);
 });
 
@@ -47,7 +68,14 @@ router.get('/insects-trees', async (req, res, next) => {
 
     const insects = await Insect.findAll({
         attributes: ['id', 'name', 'description'],
-        order: [ ['name'] ],
+        include: [{
+            model: Tree,
+            attributes: ['id', 'tree']
+        }],
+        order: [ 
+            ['name'],
+            [Tree, 'tree']
+        ],
     });
     for (let i = 0; i < insects.length; i++) {
         const insect = insects[i];
@@ -55,6 +83,10 @@ router.get('/insects-trees', async (req, res, next) => {
             id: insect.id,
             name: insect.name,
             description: insect.description,
+            tree: insect.Trees.map(tree => ({
+                id: tree.id,
+                tree: tree.true
+            }))
         });
     }
 
@@ -89,6 +121,59 @@ router.get('/insects-trees', async (req, res, next) => {
  *   - (Any others you think of)
  */
 // Your code here
+router.post('/associate-tree-insect', (req, res, next) => {
+    try {
+        const treeData = req.body.tree;
+        const insectData = req.body.insect;
+    
+        let tree = null;
+        if(treeData.id){
+            tree = await Trees.findOne({
+                where: {
+                    id: treeData.id
+                }
+            });
+            if(!tree){
+                return next({
+                    status: 'not-found',
+                    message: `Tree with ${treeData.id} was not found`
+                });
+            }
+        } else {
+            tree = await Trees.create(treeData);
+        }
+    
+    
+        let insect = null;
+        if(insectData.id){
+            insect = await Insect.findOne({
+                where: {
+                    id: insectData.id;
+                }
+            });
+            if(!insect){
+                return next({
+                    status: 'not-found',
+                    message: `Insect with id ${insectData.id} was not found`
+                });
+            }
+        } else {
+            insect = await Insect.create(insectData);
+        }
+    
+        res.json({
+            status: 'success',
+            message: 'Successfully recorded information',
+            data: {tree, insect}
+        });
 
+    } catch (error) {
+        return next({
+            status: 'error',
+            message: 'Could not create association',
+            details: error.message
+        });
+    }
+})
 // Export class - DO NOT MODIFY
 module.exports = router;
