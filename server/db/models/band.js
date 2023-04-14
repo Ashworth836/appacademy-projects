@@ -11,6 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // Your code here
+      Musician.belongsTo(models.Band, {foreignKey: 'bandId'});
+      Band.hasMany(models.Musician, {onDelete: 'cascade'});
     }
   };
   Band.init({

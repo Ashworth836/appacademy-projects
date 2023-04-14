@@ -1,7 +1,10 @@
 'use strict';
-const {
-  Model
-} = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('./index');
+
+// const {
+//   Model
+// } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Musician extends Model {
     /**
@@ -11,6 +14,15 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // Your code here
+      bandId: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+          model: 'Bands',
+          key: 'id'
+        },
+        onDelete: 'cascade',
+      }
     }
   };
   Musician.init({

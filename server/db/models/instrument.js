@@ -1,7 +1,10 @@
 'use strict';
-const {
-  Model
-} = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('./index');
+
+// const {
+//   Model
+// } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Instrument extends Model {
     /**
