@@ -97,4 +97,4 @@ associations by interacting with these models yourself.
 You are now able to create migrations and models in **Sequelize** that utilize 
 foreign keys, creating both one-to-many and many-to-many associations.
 
-[onDelete-hooks]: https://sequelize.org/master/manual/hooks.html#one-to-one-and-one-to-many-associations
+[onDelete-hooks]: https://sequelize.org/master/manual/hooks.html#one-to-one-and-one-to-many-associations# practice-for-week-11-sequelize-foreign-key-migrations-short-practice
