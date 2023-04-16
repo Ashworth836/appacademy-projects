@@ -149,4 +149,4 @@ models.
 [band-musician-instrument-db-schema]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-11/practices/band-musician-instrument-db-schema.png
 [band-musician-instrument-db-diagram-info]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-11/practices/band-musician-instrument-db-diagram-info.txt
 [hasMany-docs]: https://sequelize.org/master/class/src/associations/has-many.js~HasMany.html
-[belongsToMany-docs]: https://sequelize.org/master/class/src/associations/belongs-to-many.js~BelongsToMany.html#instance-method-add
+[belongsToMany-docs]: https://sequelize.org/master/class/src/associations/belongs-to-many.js~BelongsToMany.html#instance-method-add# practice-for-week-11-sequelize-insert-with-associations-short-practice
