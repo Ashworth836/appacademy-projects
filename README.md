@@ -310,4 +310,4 @@ than hard-coding foreign keys.
 [band-musician-instrument-db-diagram-info]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-11/practices/band-musician-instrument-db-diagram-info.txt
 [Op.or]: https://sequelize.org/master/manual/model-querying-basics.html#examples-with--code-op-and--code--and--code-op-or--code-
 [hasMany]: https://sequelize.org/master/class/src/associations/has-many.js~HasMany.html
-[belongsToMany]: https://sequelize.org/master/class/src/associations/belongs-to-many.js~BelongsToMany.html
+[belongsToMany]: https://sequelize.org/master/class/src/associations/belongs-to-many.js~BelongsToMany.html# practice-for-week-11-sequelize-dynamic-seeding-short-practice
