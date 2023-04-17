@@ -15,6 +15,13 @@ router.get('/category/:categoryName', async (req, res, next) => {
         // Include Classroom in the supplies query results
         // Order nested classroom results by name first then by supply name
     // Your code here
+    const {categoryName} = req.body;
+    const category = await Supply.findAll({
+        where: {
+            category: categoryName
+        },
+        order: [['name'], ['headed']]
+    })
 });
 
 
@@ -22,7 +29,9 @@ router.get('/category/:categoryName', async (req, res, next) => {
 router.get('/scissors/calculate', async (req, res, next) => {
     let result = {};
 
-    // Phase 10A: Current number of scissors in all classrooms
+    try {
+        
+        // Phase 10A: Current number of scissors in all classrooms
         // result.numRightyScissors should equal the total number of all
             // right-handed "Safety Scissors" currently in all classrooms
         // result.numLeftyScissors should equal the total number of all
@@ -30,9 +39,42 @@ router.get('/scissors/calculate', async (req, res, next) => {
         // result.totalNumScissors should equal the total number of all
             // "Safety Scissors" currently in all classrooms, regardless of
             // handed-ness
-    // Your code here
+            // Your code here
+        const allSupply = await Supply.findAll({
+            where: {
+                name: 'Safety scissors'
+            },
+            include: {
+                model: Classroom,
+                attributes: []
+            },
+            attributes: [
+                'id',
+                'name',
+                [Sequelize.fn('sum', Sequelize.col('Supply.Classrooms.SupplyClassroom.quantity')), 'totalQuantity']
+              ],
+              group: ['id']
+        });
 
-    // Phase 10B: Total number of right-handed and left-handed students in all
+        result.numRightyScissors = allSupply.reduce((acc, current) => {
+            if(current.name.includes('Righty')){
+                return acc + current.totalQuantity;
+            }
+            return acc
+        }, 0);
+
+        result.numRightyScissors = allSupply.reduce((acc, current) => {
+            if(current.name.includes('Lefty')){
+                return acc + current.totalQuantity;
+            }
+            return acc
+        }, 0);
+
+        result.totalNumScissors = allSupply.reduce((acc, current) => {
+            return acc + current.totalQuantity;
+        }, 0);
+
+        // Phase 10B: Total number of right-handed and left-handed students in all
         // classrooms
         // result.numRightHandedStudents should equal the total number of
             // right-handed students in all classrooms
@@ -45,21 +87,46 @@ router.get('/scissors/calculate', async (req, res, next) => {
                 // right-handed students in all classrooms.
         // result.numLeftHandedStudents should equal the total number of
             // left-handed students in all classrooms
-    // Your code here
+            // Your code here
+        const allStudents = await Student.findAll({
+            include: {
+                model: Classroom,
+                attributes: []
+            },
+            attributes: [
+                [Sequelize.fn('sum', Sequelize.col('StudentClassroom.rightHeaded')), 'totalRightHeaded'],
+                [Sequelize.fn('sum', Sequelize.col('StudentClassroom.leftHeaded')), 'totalLeftHeaded']
+            ]
+        });
 
-    // Phase 10C: Total number of scissors still needed for all classrooms
+        result.numRightHandedStudents = allStudents.reduce((acc. current) => {
+            return acc + current.dataValues.totalRightHeaded;
+        }, 0);
+
+        result.numLeftHandedStudents = allStudents.reduce((acc. current) => {
+            return acc + current.dataValues.totalLeftHeaded;
+        }, 0);
+
+        result.totalNumScissors = result.numLeftHandedStudents + result.numRightHandedStudents;
+
+        // Phase 10C: Total number of scissors still needed for all classrooms
         // result.numRightyScissorsStillNeeded should equal the total number
-            // of right-handed scissors still needed to be added to all the
-            // classrooms
-            // Note: This is the number of all right-handed students in all
-                // classrooms subtracted by the number of right-handed scissors
-                // that all the classrooms already have.
+        // of right-handed scissors still needed to be added to all the
+        // classrooms
+        // Note: This is the number of all right-handed students in all
+        // classrooms subtracted by the number of right-handed scissors
+        // that all the classrooms already have.
         // result.numLeftyScissorsStillNeeded should equal the total number
-            // of left-handed scissors still needed to be added to all the
-            // classrooms
-    // Your code here
-
-    res.json(result);
+        // of left-handed scissors still needed to be added to all the
+        // classrooms
+        // Your code here
+        result.numRightyScissorsStillNeeded = result.numRightHandedStudents - result.numRightyScissors;
+        result.numLeftyScissorsStillNeeded = result.numLeftHandedStudents - result.numLeftyScissors;    
+        res.json(result);
+        
+    } catch (error) {
+        next(error);
+    }
 });
 
 // Export class - DO NOT MODIFY

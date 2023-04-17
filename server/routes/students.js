@@ -12,12 +12,33 @@ router.get('/', async (req, res, next) => {
 
     // Phase 2A: Use query params for page & size
     // Your code here
+    const {page, size} = req.body;
+    page = parseInt(page, 10);
+    size = parseInt(size, 10);
+
+    if(isNaN(page) || page < 1){
+        page = 1;
+    }
+    if(isNaN(size) || size < 1 || size > 200){
+        size = 10;
+    }
 
     // Phase 2B: Calculate limit and offset
     // Phase 2B (optional): Special case to return all students (page=0, size=0)
     // Phase 2B: Add an error message to errorResult.errors of
         // 'Requires valid page and size params' when page or size is invalid
     // Your code here
+    let limit = size;
+    let offset = (page - 1) * size;
+    if(page === 0 && size === 0){
+        limit = undefined;
+        offset = undefined;
+        page = 1;
+    }
+
+    if(isNaN(page) || isNaN(size)){
+        errorResult.errors.push({message: `Requires valid page and size params`});
+    }
 
     // Phase 4: Student Search Filters
     /*
@@ -45,9 +66,25 @@ router.get('/', async (req, res, next) => {
     const where = {};
 
     // Your code here
-
+    if (req.query.firstName) {
+      where.firstName = { [Op.like]: `%${req.query.firstName}%` };
+    }
+    if (req.query.lastName) {
+      where.lastName = { [Op.like]: `%${req.query.lastName}%` };
+    }
+    if (req.query.lefty === 'true' || req.query.lefty === 'false') {
+      where.leftHanded = req.query.lefty === 'true';
+    } else if (req.query.lefty) {
+      errorResult.errors.push({ message: 'Lefty should be either true or false' });
+    }
+  
 
     // Phase 2C: Handle invalid params with "Bad Request" response
+    if (errorResult.errors.length) {
+        errorResult.count = await Student.count();
+        errorResult.pageCount = Math.ceil(errorResult.count / size);
+        return res.status(400).json(errorResult);
+    }
     // Phase 3C: Include total student count in the response even if params were
         // invalid
         /*
@@ -63,17 +100,24 @@ router.get('/', async (req, res, next) => {
                 }
         */
     // Your code here
+    errorResult.count = await Student.count();
+    errorResult.pageCount = Math.ceil(errorResult.count / page);
 
     let result = {};
 
     // Phase 3A: Include total number of results returned from the query without
         // limits and offsets as a property of count on the result
         // Note: This should be a new query
+    const count = await Student.count({ where });
+    const pageCount = Math.ceil(count / page);
 
     result.rows = await Student.findAll({
         attributes: ['id', 'firstName', 'lastName', 'leftHanded'],
         where,
         // Phase 1A: Order the Students search results
+        order: [['lastName'], ['firstName']],
+        limit,
+        offset
     });
 
     // Phase 2E: Include the page number as a key of page in the response data
@@ -87,6 +131,26 @@ router.get('/', async (req, res, next) => {
             }
         */
     // Your code here
+    try {
+        // Phase 2D: Add limit and offset to the query
+        const students = await Student.findAll({
+          limit,
+          offset,
+        });
+    
+        const count = await Student.count();
+        const pageCount = Math.ceil(count / size);
+    
+        // Phase 2E: Return the page number
+        res.json({ rows: students, count, pageCount, page });
+      } catch (err) {
+        console.error(err);
+        res.status(500).send('Server error');
+      }
+    
+    
+    
+    
 
     // Phase 3B:
         // Include the total number of available pages for this query as a key
@@ -103,7 +167,9 @@ router.get('/', async (req, res, next) => {
             }
         */
     // Your code here
-
+    const totalRes = await Student.count();
+    let pageCount = Math.ceil(totalRes / size);
+    result.pageCount = pageCount;
     res.json(result);
 });
 

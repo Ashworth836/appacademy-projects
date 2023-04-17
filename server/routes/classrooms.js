@@ -37,11 +37,36 @@ router.get('/', async (req, res, next) => {
     const where = {};
 
     // Your code here
+    if(req.query.name){
+        where.name = {
+            [Op.like]: `%${req.query.name}%`
+        }
+    }
+
+    if(req.query.studentLimit){
+        const limits = req.query.studentLimit.split(',');
+        if(limits.length !== 2 || +limits[0] > +limits[1]){
+            errorResult.errors.push({
+                message: "Student Limit should be two numbers: min,max"
+            })
+        }else{
+            where.studentLimit = {
+                [Op.between]: limits
+            }
+        }
+    }
+
+    if(errorResult.errors.length){
+        res.status(400);
+        res.message = "Student Limit should be an integer";
+        return res.json(errorResult);
+    }
 
     const classrooms = await Classroom.findAll({
         attributes: [ 'id', 'name', 'studentLimit' ],
         where,
         // Phase 1B: Order the Classroom search results
+        order: [['name', 'ASC']]
     });
 
     res.json(classrooms);
@@ -58,6 +83,16 @@ router.get('/:id', async (req, res, next) => {
                 // then firstName (both in ascending order)
                 // (Optional): No need to include the StudentClassrooms
         // Your code here
+        include: [
+            {
+                model: Supply,
+                order: [['category', 'ASC'], ['name', 'ASC']]
+            },
+            {
+                model: Student,
+                order: [['lastname', 'ASC'], ['firstName'. 'ASC']]
+            }
+        ]
     });
 
     if (!classroom) {
@@ -75,6 +110,51 @@ router.get('/:id', async (req, res, next) => {
             // classroom
         // Optional Phase 5D: Calculate the average grade of the classroom 
     // Your code here
+    const numOfSupplies = await Classroom.count({
+        include:
+        {
+            model: Supply
+        },
+        where: {
+            id: req.params.id
+        }
+    })
+
+    const numOfStudents = await Classroom.count({
+        include:
+        {
+            model: Student
+        },
+        where: {
+            id: req.params.id
+        }
+    })
+
+    classroom.supplyCount = numOfSupplies;
+    classroom.studentCount = numOfStudents;
+
+    if (classroom.studentCount > classroom.studentLimit) {
+        classroom.overloaded = true
+    } else {
+        classroom.overloaded = false
+    }
+
+    const averageGrade = await StudentClassroom.findOne({
+        attributes: [
+            [
+                sequelize.fn("AVG", sequelize.col("StudentClassroom.grade")),
+                "averageGrades"
+            ]
+        ],
+        where: {
+            id: req.params.id
+        }
+    });
+
+    classroom.dataValues.supplyCount = numOfSupplies;
+    classroom.dataValues.studentCount = numOfStudents;
+    classroom.dataValues.overloaded = overloaded;
+    classroom.dataValues.avgGrade = averageGrade.dataValues.averageGrades;
 
     res.json(classroom);
 });
