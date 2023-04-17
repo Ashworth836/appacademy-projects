@@ -230,4 +230,4 @@ customization!
 [band-musician-instrument-db-diagram-info]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-11/practices/band-musician-instrument-db-diagram-info.txt
 [graph-api]: https://developers.facebook.com/docs/graph-api/overview#fields
 [eager-docs]: https://sequelize.org/master/manual/eager-loading.html#eager-loading-with-many-to-many-relationships
-[op-docs]: https://sequelize.org/master/manual/model-querying-basics.html#operators
+[op-docs]: https://sequelize.org/master/manual/model-querying-basics.html#operators# practice-for-week-11-sequelize-search-params-short-practice
