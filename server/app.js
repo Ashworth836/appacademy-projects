@@ -26,8 +26,8 @@ app.get('/test-benchmark-logging', async (req, res) => {   // > 100 ms execution
             { model: Reviewer }
         ],
         // Uncomment the lines below to see the data structure more clearly
-        // limit: 100,
-        // offset: 2000
+        limit: 100,
+        offset: 2000
     });
     res.json(books);
 });
@@ -50,9 +50,10 @@ app.get('/books', async (req, res) => {
     // 1a. Analyze:
 
         // Record Executed Query and Baseline Benchmark Below:
+        // 163ms, 335ms, 315ms, 345ms
 
         // - What is happening in the code of the query itself?
-
+        // Goes through every attribute in both Author and Book
 
         // - What exactly is happening as SQL executes this query? 
  
@@ -62,53 +63,88 @@ app.get('/books', async (req, res) => {
 // 1b. Identify Opportunities to Make Query More Efficient
 
     // - What could make this query more efficient?
-
+    // Index the price
 
 // 1c. Refactor the Query in GET /books
-
+/**
+ *  if(req.query.maxPrice){
+ *      query.where = {
+ *          [Op.lte]: req.query.maxPrice;
+ *      }
+ *  }
+ *  let books = await Books.findAll(query);
+ *  res.json(books);
+ */
 
 
 // 1d. Benchmark the Query after Refactoring
 
     // Record Executed Query and Baseline Benchmark Below:
+    // 45ms, 47ms, 46ms, 55ms.
 
     // Is the refactored query more efficient than the original? Why or Why Not?
-
-
+    // more efficient
 
 
 
 // STEP #2: Benchmark and Refactor Another Query
 app.patch('/authors/:authorId/books', async (req, res) => {
-    const author = await Author.findOne({
-        include: { model: Book },
-        where: {
-            id: req.params.authorId
-        }
-    });
+    // const author = await Author.findOne({
+    //     include: { model: Book },
+    //     where: {
+    //         id: req.params.authorId
+    //     }
+    // });
 
-    if (!author) {
-        res.status(404);
-        return res.json({
-            message: 'Unable to find an author with the specified authorId'
+    // if (!author) {
+    //     res.status(404);
+    //     return res.json({
+    //         message: 'Unable to find an author with the specified authorId'
+    //     });
+    // }
+
+    // for (let book of author.Books) {
+    //     book.price = req.body.price;
+    //     await book.save();
+    // }
+
+    // const books = await Book.findAll({
+    //     where: {
+    //         authorId: author.id
+    //     }
+    // });
+
+    // res.json({
+    //     message: `Successfully updated all authors.`,
+    //     books
+    // });
+
+
+    try {
+        await Book.update({
+            { price: 5.99 },
+            { where: 
+                { authorId: 
+                    {[Op.eq]: req.params.authorId
+                    }
+                }
+            }
         });
+
+        let books = await Book.findAll({
+            where: {
+                authorId: {
+                    [Op.eq]: req.params.authorId
+                }
+            }
+        });
+
+        res.json({ message: `Successfully updated all authors,`, books });
+
+    } catch (error) {
+        res.json({ message: `Unable to find an author with the specified authorId`, error});
     }
 
-    for (let book of author.Books) {
-        book.price = req.body.price;
-        await book.save();
-    }
-
-    const books = await Book.findAll({
-        where: {
-            authorId: author.id
-        }
-    });
-
-    res.json({
-        message: `Successfully updated all authors.`,
-        books
-    });
 });
 
 
@@ -119,6 +155,11 @@ app.patch('/authors/:authorId/books', async (req, res) => {
     // GET /reviews?firstName=Daisy&lastName=Herzog
     // GET /reviews?firstName=Daisy
     // GET /reviews?lastName=Herzog
+
+// Create an index on the Reviewers table
+await sequelize.query('CREATE INDEX ON Reviewers (firstName, lastName)');
+
+// Define the /reviews endpoint
 app.get('/reviews', async (req, res) => {
     const { firstName, lastName } = req.query;
 
