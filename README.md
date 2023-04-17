@@ -158,4 +158,4 @@ You can verify that the `PATCH` request was successful by navigating to
 You are now able to refactor code to increase efficiency and optimize
 performance. You are able to use a benchmarking process to analyze the
 efficiency of your queries, and then use the benchmark data to make them more
-efficient.
+efficient.# practice-for-week-11-efficient-querying-in-sequelize-short-practice
