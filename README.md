@@ -202,4 +202,4 @@ You are now able to write Sequelize queries to get aggregate data values and
 display those values in your endpoints.
 
 [`toJSON()` Sequelize method]:
-    https://sequelize.org/master/manual/model-instances.html#note--logging-instances
+    https://sequelize.org/master/manual/model-instances.html#note--logging-instances# practice-for-week-11-sequelize-aggregate-data-short-practice
