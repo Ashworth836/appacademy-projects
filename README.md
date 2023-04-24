@@ -140,4 +140,4 @@ the only section that is hashed. The payload is only encoded, and can easily
 be decoded by anyone if they have access to it. For that reason, sensitive
 information should never be transmitted in a JWT.
 
-[`jsonwebtoken`]: https://www.npmjs.com/package/jsonwebtoken
+[`jsonwebtoken`]: https://www.npmjs.com/package/jsonwebtoken# practice-for-week-12-jwt-exploration-short-practice
