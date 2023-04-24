@@ -151,4 +151,4 @@ not the server-side.
 [http://localhost:5001]: http://localhost:5001
 [http://localhost:5002]: http://localhost:5002
 [http://localhost:5001/login]: http://localhost:5001/login
-[http://localhost:5002/login]: http://localhost:5002/login
+[http://localhost:5002/login]: http://localhost:5002/login# practice-for-week-12-cors
