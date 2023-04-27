@@ -164,3 +164,4 @@ handle these side effects:
 [side-effects]: https://beta.reactjs.org/learn/keeping-components-pure#side-effects-unintended-consequences
 [window-object]: https://developer.mozilla.org/en-US/docs/Web/API/Window
 [CodeSandbox]: https://www.codesandbox.io# practice-for-week-14-react-hooks-useeffect
+# practice-for-week-14-react-hooks-useEffect-debug
