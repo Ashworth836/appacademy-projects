@@ -192,4 +192,4 @@ Click the up arrow on the feather count.
 PictureDisplay feather count 1
 ```
 
-Check or uncheck any of the colors. Nothing happens.
+Check or uncheck any of the colors. Nothing happens.# practice-for-week-14-react-hooks-useEffect-long-practice
