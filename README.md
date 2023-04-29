@@ -80,4 +80,4 @@ like this:
 If all the changes are correct, you will be able to click the ">" tab on the
 side panel to close it. Study the code and see if you can find where it switches
 to "<". It is common practice in **React** to use a state variable in multiple
-UI updates.
+UI updates.# practice-for-week-14-react-explore-hooks-long-practice
