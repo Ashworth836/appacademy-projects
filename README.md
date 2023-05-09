@@ -138,3 +138,4 @@ If you are successful, your code should look similar to this:
 [react-redux]: https://react-redux.js.org/introduction/getting-started
 [`useDispatch`]: https://react-redux.js.org/api/hooks#usedispatch
 [`useSelector`]: https://react-redux.js.org/api/hooks#useselector# practice-for-week-15-react-redux-usedispatch-useselector
+# practice-for-week-15-react-redux-usedispatch-useselector
