@@ -1,5 +1,38 @@
 import { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { update, remove } from '../store/items';
+
+export const deleteItem = (itemId) => async (dispatch) => {
+  const response = await fetch(`/api/items/${itemId}`, {
+    method: 'DELETE'
+  });
+
+  if (response.ok) {
+    dispatch(remove(itemId));
+  } else {
+    const data = await response.json();
+    const errors = data.errors;
+    return errors;
+  }
+};
+
+export const editItem = (itemId, itemData) => {
+  return async (dispatch) => {
+    try {
+      const response = await fetch(`https://pokeapi.co/api/v2/item/${itemId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(itemData)
+      });
+      const data = await response.json();
+      dispatch(update(data));
+    } catch (error) {
+      console.log(error);
+    }
+  };
+};
 
 const ItemForm = ({ itemId, hideForm }) => {
   let item = useSelector(state => state.items[itemId]);
@@ -7,6 +40,7 @@ const ItemForm = ({ itemId, hideForm }) => {
   const [happiness, setHappiness] = useState(item.happiness);
   const [price, setPrice] = useState(item.price);
   const [name, setName] = useState(item.name);
+  const dispatch = useDispatch();
 
   const updateName = (e) => setName(e.target.value);
   const updateHappiness = (e) => setHappiness(e.target.value);
@@ -15,15 +49,22 @@ const ItemForm = ({ itemId, hideForm }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // const payload = {
-    //   ...item,
-    //   name,
-    //   happiness,
-    //   price
-    // };
-    
-    let returnedItem;
+    const payload = {
+      name,
+      happiness,
+      price
+    };
+
+    const returnedItem = await dispatch(editItem(itemId, payload));
     if (returnedItem) {
+      hideForm();
+    }
+  };
+
+  const handleDeleteClick = async (e) => {
+    e.preventDefault();
+    const deletedItem = await dispatch(deleteItem(itemId));
+    if (!deletedItem) {
       hideForm();
     }
   };
@@ -59,6 +100,7 @@ const ItemForm = ({ itemId, hideForm }) => {
           onChange={updatePrice}
         />
         <button type="submit">Update Item</button>
+        <button type="button" onClick={handleDeleteClick}>Delete Item</button>
         <button type="button" onClick={handleCancelClick}>Cancel</button>
       </form>
     </section>

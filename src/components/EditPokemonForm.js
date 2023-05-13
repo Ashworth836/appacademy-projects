@@ -2,6 +2,24 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getPokemonTypes } from '../store/pokemon';
 
+import { addOnePokemon } from '../store/pokemon';
+
+export const editPokemon = (pokemonData) =>  async (dispatch) => {
+  const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonData.id}/`, {
+    method: 'PUT',  
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      name: pokemonData.name,
+      type: pokemonData.type,
+      moves: pokemonData.moves
+    })
+  });
+  const updatedPokemonData = await response.json();
+  dispatch(addOnePokemon(updatedPokemonData));
+  };
+
 const EditPokemonForm = ({ pokemon, hideForm }) => {
   const pokeTypes = useSelector(state => state.pokemon.types);
   const dispatch = useDispatch();
@@ -48,6 +66,8 @@ const EditPokemonForm = ({ pokemon, hideForm }) => {
     if (updatedPokemon) {
       hideForm();
     }
+
+    dispatch(editPokemon(data));
   };
 
   const handleCancelClick = (e) => {

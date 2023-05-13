@@ -3,6 +3,25 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { getPokemonTypes } from '../store/pokemon';
 
+// thunk action creator
+export const createPokemon = (pokemonData) => {
+  return async (dispatch) => {
+    try {
+      const response = await fetch('/api/pokemon', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(pokemonData),
+      });
+      const data = await response.json();
+      dispatch(addPokemon(data)); 
+    } catch (error) {
+      console.error('Error creating Pokemon:', error);
+    }
+  };
+};
+
 const CreatePokemonForm = ({ hideForm }) => {
   const pokeTypes = useSelector(state => state.pokemon.types);
   const dispatch = useDispatch();
@@ -55,6 +74,8 @@ const CreatePokemonForm = ({ hideForm }) => {
       history.push(`/pokemon/${createdPokemon.id}`);
       hideForm();
     }
+
+    dispatch(createPokemon(pokemonData))
   };
 
   const handleCancelClick = (e) => {

@@ -1,9 +1,29 @@
 import { useSelector } from "react-redux";
+import { load } from "../store/items";
+
+export const fetchPokemonItems = (pokemonId) => async (dispatch) => {
+  try {
+    const response = await fetch(`/api/pokemon/${pokemonId}/items`);
+    const data = await response.json();
+    dispatch(load(data, pokemonId));
+  } catch (error) {
+    console.error("Error fetching items:", error);
+  }
+};
+
 
 const PokemonItems = ({ pokemon, setEditItemId }) => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (pokemon) {
+      dispatch(fetchPokemonItems(pokemon.id));
+    }
+  }, [pokemon, dispatch]);
+
   const items = useSelector((state) => {
     if (!pokemon.items) return null;
-    return pokemon.items.map(itemId => state.items[itemId]);
+    return pokemon.items.map((itemId) => state.items[itemId]);
   });
 
   if (!items) {

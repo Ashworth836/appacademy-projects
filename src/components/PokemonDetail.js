@@ -1,20 +1,39 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import PokemonItems from './PokemonItems';
 import EditPokemonForm from './EditPokemonForm';
 import ItemForm from './ItemForm';
+import { addOnePokemon } from  '../store/pokemon';
+import { deletedItem } from './ItemForm';
+
+export const fetchPokemonById = (id) => async (dispatch) => {
+  try {
+    const response = await fetch(`/api/pokemon/${id}`);
+    const data = await response.json();
+    dispatch(addOnePokemon(data));
+  } catch (error) {
+    console.error(error);
+  }
+};
 
 const PokemonDetail = () => {
   const { pokemonId } = useParams();
   const pokemon = useSelector(state => state.pokemon[pokemonId]);
   const [showEditPokeForm, setShowEditPokeForm] = useState(false);
   const [editItemId, setEditItemId] = useState(null);
-
+  const dispatch = useDispatch();
+  
   useEffect(() => {
     setShowEditPokeForm(false);
     setEditItemId(null);
-  }, [pokemonId]);
+    dispatch(fetchPokemonById(pokemonId))
+  }, [pokemonId, dispatch]);
+
+
+  const handleDeleteItem = (itemId) => {
+    dispatch(deleteItem(itemId));
+  };
 
   if (!pokemon || !pokemon.moves) {
     return null;
@@ -100,7 +119,13 @@ const PokemonDetail = () => {
             <button onClick={() => setShowEditPokeForm(true)}>Edit</button>
           )}
         </div>
-
+        <div>
+        {pokemon.items.map((item) => (
+          <li key={item.id}>
+            {item.name} - <button onClick={() => handleDeleteItem(item.id)}>DELETE</button>
+          </li>
+        ))}
+        </div>
       </div>
       {content}
     </div>
