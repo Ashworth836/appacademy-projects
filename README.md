@@ -122,3 +122,4 @@ const handleSubmit = async (e) => {
 
 1. `dispatch` thunk actions from within your React components
 2. Debug some of the issues that commonly arise when using thunks# practice-for-sprint-15-react-thunk-dispatch
+# practice-for-sprint-15-react-thunk-dispatch
