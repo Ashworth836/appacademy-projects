@@ -39,4 +39,4 @@ As a final task, transcribe `javascript/office/idle.js` to
 `useSocialMedia` functions. You may need to look up how random number
 generation can be done in Python!
 
-Once you've completed this, `main.py` should run exactly as `main.js` did!
+Once you've completed this, `main.py` should run exactly as `main.js` did!# practice-for-week-17-python-import-practice
