@@ -1,3 +1,4 @@
+
 # Knight's Travails Part 2
 
 Now, you're going to build some methods that allow you to get valid moves for a
