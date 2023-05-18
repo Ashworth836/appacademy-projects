@@ -96,4 +96,4 @@ Congrats on booting up your first containers - you are on your way to becoming a
 part of the Docker community!
 
 [alpine]: https://en.wikipedia.org/wiki/Alpine_Linux
-[centos]: https://en.wikipedia.org/wiki/CentOS
+[centos]: https://en.wikipedia.org/wiki/CentOS# practice-for-week-19-docker-first-containers-long-practice
