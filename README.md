@@ -505,4 +505,4 @@ containers using Container [Health Checks][health]!
 [bind-m]: https://docs.docker.com/storage/bind-mounts/
 [name-volume]: https://success.docker.com/article/different-types-of-volumes
 [dh-postgres]: https://hub.docker.com/_/postgres
-[health]: https://docs.docker.com/engine/reference/run/#healthcheck
+[health]: https://docs.docker.com/engine/reference/run/#healthcheck# practice-for-week-19-docker-container-fun-long-practice
