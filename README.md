@@ -137,4 +137,4 @@ Great job making your first Dockerfile!! Make sure to clean up by removing your
 running containers. To be extra fastidious you can also remove the image you
 built using `docker image rm <imageidORname>`.
 
-[dh-node]: https://hub.docker.com/_/node/
+[dh-node]: https://hub.docker.com/_/node/# practice-for-week-19-docker-first-dockerfile-long-practice
