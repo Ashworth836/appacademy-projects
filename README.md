@@ -214,4 +214,4 @@ Here are some **Docker** commands that you may find useful for this project.
 
 [Docker command reference]: https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Modular-Curriculum/content/docker/topics/containers/assets/reading-container-command-sheet.pdf
 [localhost url]: http://localhost:3000
-[cmd]: https://docs.docker.com/engine/reference/builder/#cmd
+[cmd]: https://docs.docker.com/engine/reference/builder/#cmd# practice-for-week-19-docker-efficient-dockerfiles-long-practice
