@@ -296,4 +296,4 @@ deployments!
 [local-react-url]: http://localhost:8082/
 
 [health]: https://docs.docker.com/engine/reference/builder/#healthcheck
-[kubernetes]: https://kubernetes.io/docs/tutorials/kubernetes-basics/
+[kubernetes]: https://kubernetes.io/docs/tutorials/kubernetes-basics/# practice-for-week-19-docker-dockerfiles-deep-dive-long-practice
