@@ -254,4 +254,4 @@ You can now use `heroku open` to be able to see the Pokedex application in all
 its glory! 
 
 [register]: https://devcenter.heroku.com/articles/container-registry-and-runtime
-[docker env replacement]: https://docs.docker.com/engine/reference/builder/#environment-replacement
+[docker env replacement]: https://docs.docker.com/engine/reference/builder/#environment-replacement# practice-for-week-19-docker-pushing-to-heroku-long-practice
