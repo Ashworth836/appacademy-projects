@@ -449,4 +449,4 @@ with Docker!
 [solution-image-3f]: 
    https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Modular-Curriculum/content/docker/assets/compose-pros-3f.png
 [solution-image-3g]: 
-   https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Modular-Curriculum/content/docker/assets/compose-pros-3g.png
+   https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Modular-Curriculum/content/docker/assets/compose-pros-3g.png# practice-for-week-19-docker-compose-pros-long-practice
