@@ -1,0 +1,45 @@
+h1 {
+    font-size: 30px;
+    font-family: playfair display, monospace;
+    padding: 0;
+    margin: auto;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #121212;
+    background-color: #fefefe;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 5px;
+    font-weight:bold;
+    color: black;
+    background-color: #fefefe;
+}
+
+p {
+    font-family: monospace;
+    font-size: 16px;
+    padding: 10px;
+    margin: auto;
+    color: #121212;
+    background-color: #fefefe;
+}
+
+.logo {
+    background-size: cover;
+    background-image: url( https://appacademy.github.io/styleguide/assets/logo/logo-emblem-black-1000.png);
+    background-color: white;
+    height: 100px;
+    width: 100px;
+}
+
+header,
+.page{
+    position: relative;
+    width: 75%;
+    margin: auto;
+}
