@@ -1,0 +1,17 @@
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.type-style {
+  background-color: "green";
+  color: "white";
+}
+
+.move-style {
+  background-color: "#fff";
+  color: "green";
+}
